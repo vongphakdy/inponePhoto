@@ -20,6 +20,12 @@ a {
     }
 }
 
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
 .head-wrapper {
     display: flex;
     margin: 1.5em 6em;
@@ -44,34 +50,51 @@ a {
 
 .gallery-wrapper {
     margin: 0 6em;
+    // overflow: hidden;
 }
 .my-gallery {
-    display: flex;
-    flex-flow: row wrap;
-    // margin-left: -8px;
     width: 100%;
-    .img-container {
-        flex: auto;
-        height: 350px;
-        min-width: 150px;
-        margin: 0 8px 8px 0;
-        img {
-            height: 100%;
-            width: auto;
-            object-fit: cover;
-        }
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, 12vh);
+    grid-gap: 10px;
+}
+.gallery-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gFig {
+    overflow: hidden;
+}
+.g1 {
+    grid-column: span 8;
+    grid-row: span 6;
+}
+.g2 {
+    grid-column: span 4;
+    grid-row: span 4;
+}
+.g3 {
+    grid-column: span 4;
+    grid-row: span 5;
+}
+.g4 {
+    grid-column: span 4;
+    grid-row: span 6;
+    img {
+        object-position: 70% 0;
     }
 }
-
-// .img-container:nth-child(4n+1) {
-//     width: 250px;
-//   }
-// .img-container:nth-child(4n+1):nth-child(4n+2) {
-// width: 325px;
-// }
-// .img-container:nth-child(4n+1):nth-child(4n+3) {
-// width: 180px;
-// }
-// .img-container:nth-child(4n+1):nth-child(4n+4) {
-// width: 380px;
-// }
+.g5 {
+    grid-column: span 4;
+    grid-row: span 3;
+}
+.g6 {
+    grid-column: span 8;
+    grid-row: span 6;
+}
+.g7 {
+    grid-column: span 4;
+    grid-row: span 3;
+}

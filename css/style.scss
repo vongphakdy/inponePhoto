@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+$blk:  #000;
+$gray: #707070;
+$light-gray:  #BABABA;
+
+*, *::after, *::before {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: $blk;
+    &:hover {
+        // color: $light-gray;
+        text-decoration: underline;
+    }
+}
+
+.head-wrapper {
+    display: flex;
+    margin: 1.5em 6em;
+    justify-content: space-between;
+    align-items: center;
+    .head-logo {
+        height: 20px;
+        vertical-align: text-bottom;
+    }
+    nav {
+        a {
+            display: inline-block;
+            margin-left: 50px;
+            padding: 1em 2em;
+        }
+        a:last-child {
+            padding-right: 0;
+        }
+    }
+    // background-color: #eee;
+}
+
+.gallery-wrapper {
+    margin: 0 6em;
+}
+.my-gallery {
+    display: flex;
+    flex-flow: row wrap;
+    // margin-left: -8px;
+    width: 100%;
+    .img-container {
+        flex: auto;
+        height: 350px;
+        min-width: 150px;
+        margin: 0 8px 8px 0;
+        img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+    }
+}
+
+// .img-container:nth-child(4n+1) {
+//     width: 250px;
+//   }
+// .img-container:nth-child(4n+1):nth-child(4n+2) {
+// width: 325px;
+// }
+// .img-container:nth-child(4n+1):nth-child(4n+3) {
+// width: 180px;
+// }
+// .img-container:nth-child(4n+1):nth-child(4n+4) {
+// width: 380px;
+// }

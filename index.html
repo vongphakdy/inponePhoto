@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/photoswipe.css"> 
+    <link rel="stylesheet" href="css/default-skin/default-skin.css">
+    <title>Inpone Photo</title>
+</head>
+<body>
+    <header class="head-wrapper">
+        <a href="index.html">
+            <img src="img/logo.svg" alt="Inpone Photo" class="head-logo">
+        </a>
+        <nav>
+            <a href="#">Models</a>
+            <a href="#">Weddings</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="gallery-wrapper">
+        <div class="my-gallery">
+            <figure class="img-container"><a href="img/pswp--gal/model2-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/model2-sm.jpg" alt=""></a></figure class="img-container">
+            <figure class="img-container"><a href="img/pswp--gal/model1-lg.jpg" data-size="898x1347"><img src="img/pswp--gal/model1-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/model3-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/model3-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/model4-lg.jpg" data-size="898x1347"><img src="img/pswp--gal/model4-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/model5-lg.jpg" data-size="898x1347"><img src="img/pswp--gal/model5-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/wed1-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed1-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/wed2-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed2-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/wed3-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed3-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/wed4-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed4-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/wed5-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed5-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/wed6-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed6-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/wed7-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed7-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/wed8-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed8-sm.jpg" alt=""></a></figure>
+            <figure class="img-container"><a href="img/pswp--gal/wed9-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed9-sm.jpg" alt=""></a></figure>
+        </div>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+            It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="js/photoswipe.min.js"></script> 
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src="js/pswp.js"></script>  
+</body>
+</html>

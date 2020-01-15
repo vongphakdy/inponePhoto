@@ -10,37 +10,44 @@
     <title>Inpone Photo</title>
 </head>
 <body>
-    <header>
-        <div class="head-wrapper">
-            <a href="index.html">
-                <img src="img/logo.svg" alt="Inpone Photo" class="head-logo">
+    <div class="nav-bar">
+        <div class="wrapper">
+            <a href="#">
+                <img src="img/logo.svg" alt="Inpone Photo logo" class="nav-logo">
             </a>
-            <nav>
-                <a href="#">Models</a>
-                <a href="#">Weddings</a>
-                <a href="#">Contact</a>
+            <nav class="nav-desk">
+                <ul>
+                    <!-- <li><a href="#">Models</a></li> -->
+                    <!-- <li><a href="#">Weddings</a></li> -->
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
+            <div class="nav-mob--wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <nav class="nav-mob">
+                    <ul>
+                        <li><a href="#">Models</a></li>
+                        <li><a href="#">Weddings</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <div class="gallery-wrapper">
+    <main class="gallery wrapper">
         <div class="my-gallery">
-            <!-- <figure class="gFig g1"><a href="img/pswp--gal/model1-lg.jpg" data-size="898x1347"><img src="img/pswp--gal/model1-sm.jpg" alt="" class="gallery-img"></a></figure>
-            <figure class="gFig g2"><a href="img/pswp--gal/model2-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/model2-sm.jpg" alt="" class="gallery-img"></a></figure>
-            <figure class="gFig g3"><a href="img/pswp--gal/model3-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/model3-sm.jpg" alt="" class="gallery-img"></a></figure>
-            <figure class="gFig g4"><a href="img/pswp--gal/model4-lg.jpg" data-size="898x1347"><img src="img/pswp--gal/model4-sm.jpg" alt="" class="gallery-img"></a></figure>
-            <figure class="gFig g5"><a href="img/pswp--gal/model5-lg.jpg" data-size="898x1347"><img src="img/pswp--gal/model5-sm.jpg" alt="" class="gallery-img"></a></figure> -->
             <figure class="gFig g1"><a href="img/pswp--gal/wed8-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed8-sm.jpg" alt="" class="gallery-img"></a></figure>
+            <figure class="gFig g8"><a href="img/pswp--gal/model1-lg.jpg" data-size="898x1347"><img src="img/pswp--gal/model1-sm.jpg" alt="" class="gallery-img"></a></figure>
             <figure class="gFig g2"><a href="img/pswp--gal/wed4-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed4-sm.jpg" alt="" class="gallery-img"></a></figure>
             <figure class="gFig g3"><a href="img/pswp--gal/wed6-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed6-sm.jpg" alt="" class="gallery-img"></a></figure>
             <figure class="gFig g4"><a href="img/pswp--gal/wed3-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed3-sm.jpg" alt="" class="gallery-img"></a></figure>
             <figure class="gFig g5"><a href="img/pswp--gal/wed7-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed7-sm.jpg" alt="" class="gallery-img"></a></figure>
             <figure class="gFig g6"><a href="img/pswp--gal/wed2-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed2-sm.jpg" alt="" class="gallery-img"></a></figure>
             <figure class="gFig g7"><a href="img/pswp--gal/wed5-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed5-sm.jpg" alt="" class="gallery-img"></a></figure>
-            <!-- <figure class="gFig g7"><a href="img/pswp--gal/wed1-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed1-sm.jpg" alt="" class="gallery-img"></a></figure> -->
-            <!-- <figure class="gFig g14"><a href="img/pswp--gal/wed9-lg.jpg" data-size="1347x898"><img src="img/pswp--gal/wed9-sm.jpg" alt="" class="gallery-img"></a></figure> -->
         </div>
-    </div>
+    </main>
 
     <!-- Root element of PhotoSwipe. Must have class pswp. -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
